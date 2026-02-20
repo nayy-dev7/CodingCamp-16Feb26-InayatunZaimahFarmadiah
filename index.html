@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List - Naya</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>To Do List</h1>
+</header>
+
+<main>
+
+    <section>
+        <h2>Add New Task</h2>
+        <form id="todo-form">
+            <label for="todo-input">Task</label>
+            <input type="text" id="todo-input" placeholder="Enter your task">
+
+            <label for="date-input">Due Date</label>
+            <input type="date" id="date-input">
+
+            <button type="submit">Add Task</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Filter Tasks</h2>
+        <label for="filter-select">Choose Filter</label>
+        <select id="filter-select">
+            <option value="all">All</option>
+            <option value="active">Active</option>
+            <option value="done">Done</option>
+            <option value="today">Today</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>Your Tasks</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="todo-body"></tbody>
+        </table>
+
+        <p id="empty-state" class="empty-state">No task yet.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 To Do List Project Naya</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
